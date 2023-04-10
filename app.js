@@ -32,3 +32,4 @@ app.use('/api',userRoutes);
 mongoose.connect('mongodb://localhost:27017/projectGPS', options).then(()=>console.log('Conexion exitosa a la base de datos')).catch((err)=>console.log('Problemas al conectar a la base de datos'));
 app.listen(port,()=>{console.log(`http://localhost:${port}`)});
 module.exports = app;
+// npm install express mongoose cors body-parser

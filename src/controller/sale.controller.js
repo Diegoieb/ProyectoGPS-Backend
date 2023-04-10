@@ -19,7 +19,7 @@ const insertSale = (req, res) =>{
             if(err){
                 return res.status(500).send({message:'No fue posible ingresar la venta'});
             }
-            res.status(200).send({saleStore});
+            res.status(200).send({message:'Venta ingresada con exito'});
         });
     }catch(err){
         return res.status(500).send({message:'Error interno'});
@@ -38,7 +38,7 @@ const updateSale = (req, res) =>{
         if(!sale){
             return res.status(404).send({message:'No se encuentra la venta'});
         }
-        res.status(200).send({sale});
+        res.status(200).send({message:'Venta actualizada con exito'});
     })
 }
 //delete
